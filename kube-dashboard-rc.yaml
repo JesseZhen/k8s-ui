@@ -10,11 +10,11 @@ kubernetes.io/cluster-service: "true"
 spec:
   replicas: 1
 selector:
-  k8s-app: kubernetes-dashboard
+  name: kubernetes-dashboard
 template:
   metadata:
     labels:
-      k8s-app: kubernetes-dashboard
+      name: kubernetes-dashboard
       version: latest
       kubernetes.io/cluster-service: "true"
   spec:
