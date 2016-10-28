@@ -21,7 +21,7 @@ spec:
     spec:  
       containers:  
       - name: kube-ui  
-        image: gcr.io/google_containers/kubernetes-dashboard-amd64:v1.4.0  
+        image: brainqi/kubernetes-dashboard-amd64  
         resources:  
           # keep request = limit to keep this container in guaranteed class  
           limits:  
